@@ -129,7 +129,7 @@ buah = st.selectbox('Pilih Buah', list(kadargula_buah.keys()), format_func=lambd
 
 if st.button('Hitung Kadar Gula'):
     kadargula_total = kadargula_buah[buah]['kadar gula']
-    st.success(f"Jumlah kadar gula dalam 250mL yang mengandung 225ml air {buah.lower()} adalah: {kadargula_total} gram")
+    st.success(f"Jumlah kadar gula dalam 250mL yang mengandung 225ml air  adalah: {kadargula_total} gram")
     st.write("Kandungan Vitamin:")
     for vitamin, nilai in kadargula_buah[buah]['vitamin'].items():
         st.write(f"- {vitamin}: {nilai}")
