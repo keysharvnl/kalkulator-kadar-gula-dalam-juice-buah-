@@ -124,7 +124,7 @@ kadargula_buah = {
 # Mengubah urutan judul dan kalkulator
 st.markdown("<div class='kalkulator-area'>", unsafe_allow_html=True)
 st.markdown("<h2 style='color: white; text-align:center;'>🥭Menghitung Kadar Gula dalam Jus Buah</h2>", unsafe_allow_html=True)
-st.write("Pilih buah favorit Anda untuk melihat kadar gula dalam 250mL jus.")
+st.write("Pilih buah favorit Anda untuk melihat kadar gula dalam 250mL jus yang mengandung 225ml air.")
 buah = st.selectbox('Pilih Buah', list(kadargula_buah.keys()), format_func=lambda x: x.capitalize())
 
 if st.button('Hitung Kadar Gula'):
